@@ -1,0 +1,201 @@
+
+@media only screen and (max-width:800px){
+    .entry_container{
+        width: 97%;
+    }
+    .form_entry{
+        width: 85%;
+    }
+}
+@media only screen and (min-width:800px){
+    .entry_container{
+        width: 50%;
+    }
+    .form_entry{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:600px){   
+    .form_entry{
+        width: 100%;
+    }
+}
+
+.entry_container{
+    margin: 100px auto;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 12px var(--mainColor) ;  
+}
+
+:root{
+  --mainColor:rgb(181, 50, 115);
+  --mainColorLight:rgba(181, 50, 116, 0.8);
+  --mainColorHeavy:rgb(150, 27, 89);
+}
+
+/*entry component itself*/
+.recognize-user{
+    min-height: 100vh;
+    text-align: center;
+    padding-top: calc(100vh/2);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+/*---------sign_up----------*/
+/*personal info*/
+.multi_step_form{
+    width: 100%;
+}
+
+.form_entry{
+   padding: 10px;
+   margin: 0 auto;
+}
+
+.step_container{
+    border-bottom: 2px solid var(--mainColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.step{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;  
+    transition: 0.8s ease;
+    
+}
+#step_1{
+   background-color: var(--mainColor);
+   border-top-right-radius: 30px;
+   border-bottom-right-radius: 30px;
+   color: white;
+}
+
+.form_entry_label{
+  display: block;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.form_entry_article_gender{
+ display: flex;
+ flex-direction: row;
+ gap: 10px;
+}
+
+.form_entry_input_text{
+    padding: 7px;
+    border: none;
+    height: 40px;
+    font-weight: bold;
+    /* box-shadow: 0 2px 5px var(--mainColor) ; */
+    width: 100%;
+    margin-top: 5px;
+    transition: 0.4s ease-in-out;
+    font-size: 17px;
+}
+.form_entry_input_text:focus{
+    outline:none;
+}
+
+.form_entry_input_radio{
+   margin-left: 3px;
+}
+.form_entry_article{
+   margin: 15px 0;
+}
+
+.btn{
+    padding: 6px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: var(--mainColor);
+    font-size: 18px;
+    border-radius: 3px;
+    transition: 0.1s ease-in-out;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: var(--mainColorLight);
+}
+.form_note{
+    margin: 5px 0;
+}
+.form_note_link{
+    color: var(--mainColorHeavy);
+    font-size: 18px;
+}
+.error_form_alert{
+    margin: 4px 0;
+    color: red;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+}
+/*end personal*/
+/*-----------------------------------------*/
+/*phone*/
+.PhoneInputInput{
+    box-shadow: 0 2px 5px var(--mainColor);
+    height: 40px;
+    font-weight: bold;  
+    padding: 7px;
+    border: none;
+}
+.input_phone{
+   width: 80%;
+   margin: 10px 0 40px 0;
+}
+
+.error_phone{
+    margin-top: 25px;
+}
+/*end phone*/
+/*....................*/
+/*thankYouForSignup*/
+.thank-you-for-signup{
+  padding: 40px 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.paragraph_note{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 5px 0;
+}
+.paragraph_note_error{
+  color: var(--mainColorHeavy);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*end thankYouForSignup*/
+/*....................*/
+/*login*/
+.login_entry{
+    padding: 30px 0;
+}
+.avatar{
+    text-align: center;
+}
+.profile_image{
+    max-width: 70px;
+    max-height: auto;
+    object-fit: cover;
+    box-shadow: 0 2px 5px var(--mainColor);
+}
+.btn-reset-password{
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--mainColorHeavy);
+}
+.loading{
+    text-align: center;
+    padding: 50px;
+}
+/*end login*/
+/*-----------end sign_up----------*/

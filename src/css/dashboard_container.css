@@ -1,0 +1,197 @@
+
+@media only screen and (min-width:837px){
+    .navigation{
+        position: sticky;
+        top: 0;
+        height: 96vh;
+    }
+}
+
+:root{
+    --mainColor:rgb(181, 50, 115);
+    --mainColorLight:rgba(181, 50, 116, 0.8);
+    --mainColorHeavy:rgb(150, 27, 89);
+}
+
+.dashboard_ccontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    padding: 10px;
+}
+/*navigation*/
+.navigation{
+    min-width: 250px;
+    background-color: rgba(255, 255, 255, 0.857);  
+    overflow: hidden;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+    flex: 1;
+    align-items: center;
+    border-radius: 10px;
+}
+.logo{
+ border-bottom: 2px solid var(--mainColor);
+ margin: 15px 0;
+ width: 100%;
+ text-align: center;
+ padding-bottom: 20px;
+ font-size: 25px;
+ color: var(--mainColorHeavy);
+}
+.pages-routes{
+    flex: 5;
+    display: flex;
+    flex-direction: column; 
+    gap: 7px; 
+    width: 100%;
+    margin: 20px 0 50px 0;
+    padding: 10px 0 0 10px;
+}
+.nav-bar-link{
+    text-decoration: none;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    margin: 7px 0;
+    padding-left: 10px;
+    transition: 0.1s font-size ease;
+}
+.active{
+    border-left: 6px solid var(--mainColor);
+    font-weight: bold;
+}
+/*end navigation*/
+
+
+/*content-page*/
+.profile-avatar-header-link{
+    max-width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.content-page{
+   min-width: 400px;
+   flex: 4;
+   padding: 20px;
+}
+.content-page-header{
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+.user-info-header-link{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: space-between;
+   gap: 5px;
+   background-color: rgba(255, 255, 255, 0.857);
+   padding: 5px;
+   border-radius: 5px;
+}
+.user-header-name{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black; 
+    transition: 0.4s;
+}
+.user-header-name:hover,.user-header-name:active{
+    color: var(--mainColor);
+}
+.current-page{
+  padding: 30px 0;
+  margin-top: 30px;
+}
+/*................*/
+/*profile page*/
+.profile-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15px;
+}
+.profile-card{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.857);  
+    border-radius: 10px;
+}
+.profile-card:first-child{
+    max-width: fit-content;
+}
+.profile-avatar{
+    text-align: center;
+}
+
+.form-profile-personal-info{
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(350px , 1fr));
+  width: 100%;
+}
+.btn-save{
+    max-width: fit-content;
+}
+.overload-input{
+    width: 80%;
+    height: 30px;
+    margin-bottom: 7px;
+    box-shadow: none;
+    margin-right: 4px;
+}
+.overload-input:disabled{
+    background-color: rgba(181, 50, 116, 0.2);
+}
+.btn-edit{
+    background-color: rgb(132, 5, 69);
+    font-size: 14px;
+}
+.btn:disabled{
+    background-color:rgba(181, 50, 116, 0.38);
+}
+.btn-verify{ 
+   background-color: rgb(15, 173, 235);
+   font-size: 14px;
+}
+.btn-verify:hover{
+    background-color: rgb(10, 111, 151);
+}
+.verify-area span{
+    margin-right: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+}
+.not-verified{
+   color: rgb(185, 51, 51);
+}
+.verified{
+   color: green;
+}
+.btn-delete{
+    background-color: rgb(156, 5, 5);
+    font-size: 14px;
+    max-width: fit-content;
+    margin-top: 10px;
+}
+/*end profile page*/
+/*...................*/
+
+/*Reset password*/
+.btn-cancel{
+    background-color: red;
+    margin-left: 7px;
+}
+
+/*home page*/
+.home-page{
+    text-align: center;
+    margin: 30px 0;
+}
+/*end content-page*/
