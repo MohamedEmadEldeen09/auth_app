@@ -33,14 +33,15 @@ const queryClient = new QueryClient();
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-    <Route path="auth_app/recognize/key_user" element={<Entry />}>
+    <Route path="/auth_app" element={<Entry />}/>
+    <Route path="/auth_app/recognize/key_user" element={<Entry />}>
       <Route path="log_in" element={<Form_Login_Info />} />
       <Route path="sign_up" element={<Form_Signup_info />} />
       <Route path="finish_signup" element={<ThankYouForSignup />} />   
       <Route path="email_verify_failed" element={<EmailVerificationFailed />} /> 
       <Route path="reset_password" element={<ResetPassword />} />     
     </Route>    
-    <Route path="auth_app/dashboard" element={<Dashboard />}>
+    <Route path="/auth_app/dashboard" element={<Dashboard />}>
       <Route index element={<Home />} />
       <Route path="home" element={<Home />} />
       <Route path="user/profile" element={<Profile />} />
