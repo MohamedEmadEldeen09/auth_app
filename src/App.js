@@ -27,13 +27,16 @@ import ResetEmail from "./components/profile/ResetEmail";
 import ResetPhone from "./components/profile/ResetPhone";
 import UserAuthByPassword from "./components/profile/UserAuthByPassword";
 
+//manage main route
+import RedirectedPage from "./components/RedirectedPage";
+
 const queryClient = new QueryClient();
 
 //Routes
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-    <Route path="/auth_app" element={<Entry />}/>
+    <Route path="/auth_app" element={<RedirectedPage />}/>
     <Route path="/auth_app/recognize/key_user" element={<Entry />}>
       <Route path="log_in" element={<Form_Login_Info />} />
       <Route path="sign_up" element={<Form_Signup_info />} />
