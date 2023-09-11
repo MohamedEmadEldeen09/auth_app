@@ -1,5 +1,6 @@
 import {QueryClient , QueryClientProvider, useQuery} from "react-query"
-import {createBrowserRouter , createRoutesFromElements , Route, RouterProvider} from "react-router-dom"
+import {createBrowserRouter , createRoutesFromElements , 
+  Route, RouterProvider} from "react-router-dom"
 
 //components
 //registration and entry pages
@@ -65,7 +66,6 @@ const router = createBrowserRouter(
 
 
 function App() {
-
   return (
     <QueryClientProvider client={queryClient}>
       <RouterProvider router={router} />
