@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/auth_app/static/css/main.d970ff9f.css",
-    "main.js": "/auth_app/static/js/main.1329ec97.js",
+    "main.js": "/auth_app/static/js/main.02f2bdfc.js",
     "static/media/default_profile_image.jpg": "/auth_app/static/media/default_profile_image.b8edc76c07bbdd652e6f.jpg",
     "index.html": "/auth_app/index.html",
     "main.d970ff9f.css.map": "/auth_app/static/css/main.d970ff9f.css.map",
-    "main.1329ec97.js.map": "/auth_app/static/js/main.1329ec97.js.map"
+    "main.02f2bdfc.js.map": "/auth_app/static/js/main.02f2bdfc.js.map"
   },
   "entrypoints": [
     "static/css/main.d970ff9f.css",
-    "static/js/main.1329ec97.js"
+    "static/js/main.02f2bdfc.js"
   ]
 }
